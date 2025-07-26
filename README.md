@@ -30,12 +30,24 @@ Add this to your `pom.xml` (once published to GitHub Packages):
 </dependency>
 ```
 
+Make sure to include the GitHub Packages repository:
+
+```xml
+<repositories>
+  <repository>
+    <id>github</id>
+    <url>https://maven.pkg.github.com/aaveshdev/aromaj</url>
+  </repository>
+</repositories>
+```
+
 ---
 
 ## Quick Start
 
 ```java
 import com.aromaj.Aroma;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
